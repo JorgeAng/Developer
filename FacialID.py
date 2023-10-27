@@ -165,6 +165,19 @@ class MainApp(App):
             else:
                 count = 0
                 while(True):
+                    /bin/sh: python: command not found
+
+[Done] exited with code=127 in 0.018 seconds
+
+[Running] python -u "/Users/jorgeangeles/Developer/FacialIDProject.py"
+/bin/sh: python: command not found
+
+[Done] exited with code=127 in 0.007 seconds
+
+[Running] python -u "/Users/jorgeangeles/Developer/FacialIDProject.py"
+/bin/sh: python: command not found
+
+[Done] exited with code=127 in 0.019 seconds
                     rtrn, image=camera.read()
                     gray = cv2.cvtColor(image, cv2.COLOR_BGR2GRAY)
                     faces = face.detectMultiScale(gray, 1.3, 5)
